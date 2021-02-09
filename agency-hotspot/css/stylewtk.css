@@ -1,0 +1,156 @@
+.body-wtk {
+    background-image: url("../../img/dupla.png"), url("../../linha2.png"), url("../../linha1.png"), url("../../linha3.png");
+    background-repeat: no-repeat;
+    /* background-position: 40em 6%, 35em 145%, 35em 75%, 40em 250%; */
+    /* background-size: 650px, 750px, 700px, 700px; */
+    /* overflow: hidden; */
+    /* transform: scale(1); */
+    /* transition: .5s ease; */
+    /* background-color: #fff; */
+    /* width:fit-content; */
+} 
+
+/* Títulos e textos */
+
+.titles-wtk  {
+    margin-left: 90px;
+    line-height: 0;
+
+}
+
+.text-wtk {
+    margin-left: 90px;
+    line-height: 0;
+    font-size: 23px;
+    margin-top: 75px;
+    font-family: 'Poppins', sans-serif;
+    animation-name: text;
+    animation-duration: 18s;
+    animation-delay: 8;
+}
+
+.p1-wtk  {
+    margin-top: 120px;
+    color: #373435;
+    font-size: 40px;
+    margin-bottom: -2px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    white-space: nowrap;
+    animation: floatText 0.4s  alternate ease-in;
+}
+
+
+.p2-wtk {
+    color: #0d6159;
+    font-size: 40px;
+    margin-bottom: -20px;
+    font-family: 'Poppins', sans-serif;
+    animation-duration: 1.2s;
+    animation-name: slidein;
+}
+
+.p3-wtk {
+    color: #fab600;
+    font-size: 74px;
+    margin-top: 68px;
+    font-family: 'Poppins', sans-serif;
+    animation-duration: 1.5s;
+    animation-name: slidein2;
+}
+
+.agro-wtk {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.brazil-wtk {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif !important;
+} 
+
+.button-wtk {
+    text-decoration: none;
+    background-color: #0d6159;
+    color: white;
+    margin-left: 90px; 
+    line-height: 6;
+    padding: 6px 40px;
+    font-size: 26px;
+    font-family: 'Poppins', sans-serif !important;
+    font-weight: normal;
+    animation-name:button;
+    animation-duration: 16s;
+    animation-delay: 8;
+}
+
+/* Animações texto */
+
+@keyframes text {
+    0% {opacity: 0;}
+    25% {opacity: 25;}
+    50% {opacity:50;}
+    75% {opacity: 75;}
+    100% {opacity: 100;}
+}
+
+@keyframes floatText{
+    /* from {
+      left: 00%;
+    }
+  
+    to {
+      /* left: auto; */
+      /* left: 100% fixed;
+    */ 
+
+    0% {left: -25%;}
+    100% {left: 00%;}
+    
+} 
+
+@keyframes slidein-wtk {
+    from {
+      margin-left: -100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+@keyframes slidein2-wtk {
+    from {
+      margin-left: -250%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 00%;
+      width: 100%;
+    }
+  }
+
+  @keyframes button-wtk {
+    0% {opacity: 0;}
+    25% {opacity: 25;}
+    50% {opacity:50;}
+    75% {opacity: 75;}
+    100% {opacity: 100;}
+  }
+
+ 
+
+
+
+  
+  
+    
+  
+  
+
+    
+
+
