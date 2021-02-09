@@ -28,6 +28,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@900&display=swap" rel="stylesheet">
     <link href="agency-hotspot/css/stylewtk.css" rel="stylesheet">
+
+    <style>
+        .wtk-titles {
+  margin-left: 90px;
+}
+        .wtk-titles2 {
+            margin-left: 50px;
+            font-family: "Poppins", Arial, sans-serif;
+            font-weight: 500;
+            line-height: 0.9;
+        }
+.wtk-text {
+  margin-left: 90px;
+  font-size: 15px;
+  margin-top: 75px;
+  width: 100%;
+  height: 100%;
+  font-family: "Poppins", sans-serif;
+  animation-name: text;
+  animation-duration: 18s;
+  animation-delay: 8;
+    position: absolute;
+    right:0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    </style>
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="90">
     
@@ -152,9 +180,59 @@
             </header>
         </div>
     </div>
-<h3>Seguro de máquinas e equipamentos</h3>
-<p>Seguro contratado para as máquinas e equipamentos utilizados na produção agrícola. Para tanto, os mesmos NÃO podem ter sido cedidos em garantia de qualquer tipo de crédito rural. As coberturas contratadas podem ser ajustadas de acordo com a necessidade de cada cliente.</p><br>
+<h3><span class="wtk-titles">Seguro de máquinas e equipamentos</span></h3>
+<p><div class="wtk-text">Seguro contratado para as máquinas e equipamentos utilizados na produção agrícola. Para tanto, os mesmos NÃO podem ter sido cedidos em garantia de qualquer tipo de crédito rural. As coberturas contratadas podem ser ajustadas de acordo com a necessidade de cada cliente.</p><br>
+<center><img align="right" width=400 height=300 src="https://i1.wp.com/wtkagro.com.br/wp-content/uploads/2021/01/agricola-600x600.jpg"></center>
 
-<p>Solicite contato</p>
+<div class="container">
+    <p>Solicite seu contato!</p>
+    
+    <form action="enviar.php" class="needs-validation" novalidate>
+        <form method="post" action="enviar.php">
+        <div class="form-group">
+        <label for="uname">Nome completo*:</label>
+        <input type="text" class="form-control" id="name" placeholder="Insira seu nome" onchange="verificar()" name="text" pattern="[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Por favor, insira seu nome completo</div>
+      </div>
+      <div class="form-group">
+        <label for="uname">E-mail*:</label>
+        <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail" name="uname" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Insira seu e-mail</div>
+      </div>
+      <div class="form-group">
+        <label for="pwd">Telefone*:</label>
+        <input type="number" class="form-control" id="pwd" placeholder="Insira seu telefone" name="telefone" required>
+        <div class="valid-feedback">Valid.</div>
+        <div class="invalid-feedback">Insira seu telefone com DDD</div>
+      </div>
+
+      <input type="submit" value="Solicitar contato"> <br>
+     
+      <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+    </form>
+</form>
+  </div>
+</div>
 </body>
 </html>
